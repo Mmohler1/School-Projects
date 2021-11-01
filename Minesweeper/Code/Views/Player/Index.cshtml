@@ -1,0 +1,15 @@
+﻿@model Milestone.Models.PlayerInfo
+
+<div>
+    <h4>Things about players please login or register</h4>
+    <hr />
+    <p>Things and stuff</p>
+    <ul>
+        <li><a href="player/login">Login</a></li>
+        <li><a href="player/register">Register</a></li>
+    </ul>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>

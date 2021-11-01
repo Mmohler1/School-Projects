@@ -1,0 +1,69 @@
+﻿@model IEnumerable<Milestone.Models.Space>
+<link rel="stylesheet" href="~/css/mine.css" /> <!--CSS for the page-->
+@*
+    Partial view for handeling the actual minesweeper game itself.
+*@
+
+
+@{
+    string[] imageNames = {"zero.png" , "one.png" , "two.png" , "three.png" , "four.png", "five.png", "six.png",
+     "seven.png" , "eight.png", "bomb.png", "clear.png", "flag.png"};
+}
+
+
+<div class="center-page">
+
+
+    <form>
+        <div id="gameZone" oncontextmenu="return false;">
+
+            @for (int button = 0; button < 100; button++)
+            {
+                //Break line every 10 squares
+                if (button % 10 == 0)
+                {
+                    <br />
+                }
+
+
+                <button class="game-button" type="submit" value="@button" name="squareNumber" asp-controller="Minesweeper"
+                        asp-action="HandleOnClick">
+                    @if (Model.ElementAt(button).CurrentlyOccupied == true && Model.ElementAt(button).visited == true)
+                    {
+                        <img class="square-stuff" src="~/img/@imageNames[9]" />
+                    }
+                    else if (Model.ElementAt(button).visited == true)
+                    {
+                        <img class="square-stuff" src="~/img/@imageNames[Model.ElementAt(button).BombNear]" />
+                    }
+                    else if (Model.ElementAt(button).flag == true)   //Sets picture to flag if not already visted and the flag variable is true.
+                    {
+                        <img class="square-stuff" src="~/img/@imageNames[11]" />
+                    }
+                    else
+                    {
+                        <img class="square-stuff" src="~/img/@imageNames[10]" />
+                    }
+                    <div class="button-label">
+                        @Model.ElementAt(button).row
+                        ,
+                        @Model.ElementAt(button).col
+                    </div>
+
+
+
+                </button>
+
+
+
+
+            }
+
+            <br />
+
+            @ViewBag.theResult
+            <h3>@ViewBag.Clicks</h3>
+            <h2>@ViewBag.Win</h2>
+        </div>
+    </form>
+</div>

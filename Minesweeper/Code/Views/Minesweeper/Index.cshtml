@@ -1,0 +1,29 @@
+﻿<link rel="stylesheet" href="~/css/mine.css" /> <!--CSS for the page-->
+
+<div class="center-page">
+    @{
+        ViewData["Title"] = "Index";
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+
+    <h1>Minesweeper THE GAME!</h1>
+
+    <br />
+    <div id="gameZone">
+        @{
+            Html.RenderPartial("~/Views/Shared/_ViewMinesweeperPartial.cshtml");
+        }
+    </div>
+
+    <form>
+        <button type="submit" value=false asp-controller="Minesweeper"
+                asp-action="SaveButton">
+            Save Game!
+        </button>
+        <button type="submit"  asp-controller="Minesweeper"
+                asp-action="LoadButton">
+            Load Game!
+        </button>
+    </form>
+
+</div>
