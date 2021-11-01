@@ -16,14 +16,3 @@ This is a list of my projects that I made while attending Grand Canyon Universit
 <p>Business and Data Access Layers: https://github.com/Mmohler1/School-Projects/tree/main/GroundedStorks/Code/app/Services </p>
 
 <p>The designs I drew up for Grounded Storks: https://github.com/Mmohler1/School-Projects/tree/main/GroundedStorks/Design </p>
-
-
-<h3>Minesweeper</h3>
-
-![Image of Minesweeper](https://github.com/Mmohler1/School-Projects/blob/main/Minesweeper/Design/MS-1.JPG)
-A web version of the Minesweeper game that lets players login and register.
-
-
-<h3>Music Catalogue</h3>
-
-A job posting website 
