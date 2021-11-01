@@ -6,18 +6,19 @@ This is a list of my projects that I made while attending Grand Canyon Universit
 <h3>Grounded Storks</h3>
 
 ![Image of Grounded Storks](https://github.com/Mmohler1/School-Projects/blob/main/GroundedStorks/Design/Screenshot/GS-1.PNG)
-Grounded Storks is a job posting website that lets users login and register to make portfolios, join groups, and apply for jobs. 
+<p>Grounded Storks is a job posting website that lets users login and register to make portfolios, join groups, and apply for jobs. 
+</p>
 
-Most of the code I had written for this project is here
-Models: https://github.com/Mmohler1/School-Projects/tree/main/GroundedStorks/Code/app/Models
-Views: https://github.com/Mmohler1/School-Projects/tree/main/GroundedStorks/Code/resources/views
-Controllers: https://github.com/Mmohler1/School-Projects/tree/main/GroundedStorks/Code/app
-Business and Data Access Layers: https://github.com/Mmohler1/School-Projects/tree/main/GroundedStorks/Code/app/Services
+<p>Most of the code I had written for this project is here</p>
+<p>Models: https://github.com/Mmohler1/School-Projects/tree/main/GroundedStorks/Code/app/Models </p>
+<p>Views: https://github.com/Mmohler1/School-Projects/tree/main/GroundedStorks/Code/resources/views </p>
+<p>Controllers: https://github.com/Mmohler1/School-Projects/tree/main/GroundedStorks/Code/app </p>
+<p>Business and Data Access Layers: https://github.com/Mmohler1/School-Projects/tree/main/GroundedStorks/Code/app/Services </p>
 
-The designs I drewup for Grounded Storks: https://github.com/Mmohler1/School-Projects/tree/main/GroundedStorks/Design
+<p>The designs I drewup for Grounded Storks: https://github.com/Mmohler1/School-Projects/tree/main/GroundedStorks/Design </p>
 
 
-h3>Minesweeper</h3>
+<h3>Minesweeper</h3>
 
 ![Image of Grounded Storks](https://github.com/Mmohler1/School-Projects/blob/main/GroundedStorks/Design/Screenshot/GS-1.PNG)
 A web version of the Minesweeper game that lets players login and register.
