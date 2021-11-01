@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+      
+<h:head>
+	<title>Add Song</title>
+</h:head>
+	<h:body>
+		<!-- Sets the layout and Title of the page -->
+		<ui:composition template="/layouts/commonLayout.xhtml">
+		<ui:define name="title">Add Song</ui:define>
+		<ui:define name="content">
+		
+			
+			<!-- The form for login -->
+			<div align="center"> 
+				<div class = "aligned">
+			<h3>Add A Song to Your MusicCatalog</h3>
+		
+			<h:form>
+																				
+				Number:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 							<h:inputText id = "num" value="#{song.num}" /><h:message for="num" /><br/> <!-- Song Class inputs to make a song-->
+				Song Name:&nbsp;												<h:inputText id = "name" value="#{song.name}" /><h:message for="name" /><br/>
+				Album:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;			<h:inputText id = "album" value="#{song.album}" /><h:message for="album" /><br/>
+				Artist:  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	<h:inputText id = "artist" value="#{song.artist}" /><h:message for="artist" /><br/>
+				Genre:  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		<h:inputText id ="genre" value="#{song.genre}" /><h:message for= "genre"/><br/>
+																				
+				<h:commandButton action="#{principle.addProduct(song)}" value="Add Song" />     <!-- Adds song and sends back to Product page-->
+				<h:commandButton action="DisplaySong.xhtml" value="Cancel" />  <!-- Back to Catalog page -->
+						
+			</h:form>
+			<h:messages/> 
+			</div>	
+			</div>
+		</ui:define>
+		</ui:composition>
+	
+	</h:body>	
+</html>

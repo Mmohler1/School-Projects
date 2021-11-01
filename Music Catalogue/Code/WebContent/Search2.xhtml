@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+
+<h:head>
+	<title>Search Page</title>
+</h:head>
+	
+	<h:body>
+		<ui:composition template="/layouts/commonLayout.xhtml">
+		<ui:define name="title">Search Page Searched</ui:define>
+		<ui:define name="content">
+			
+			
+		<div align="center"> 
+		<div class = "aligned">
+				
+		<!-- CSS style for the Data Table -->
+		<h:outputStylesheet library="css" name="product-style.css"/>
+		
+		<h3>Search Music by Name!</h3>
+		
+		
+		<!--  Data table using the users song list-->
+		<h:dataTable value="#{principle.service.getSearchedSongs(searched)}" var="songDe"
+			styleClass="orderTable" 
+    		headerClass="orderTHeader"
+    		rowClasses="orderORow,orderERow"
+    		>
+			
+				
+			<!-- Song id -->
+			<h:column>
+				<f:facet name = "header">Song ID</f:facet>
+				#{songDe.id}
+			</h:column>
+			
+			
+			<!-- Song Number -->
+			<h:column>
+			
+				<f:facet name = "header">Song Number</f:facet>
+				#{songDe.num}
+			</h:column>
+				
+			<!-- Name of Song -->
+			<h:column>
+				<f:facet name = "header">Song Name</f:facet>
+				#{songDe.name}
+			</h:column>	
+				
+			<!-- Name of Album -->
+			<h:column>
+				<f:facet name = "header">Album</f:facet>
+				#{songDe.album}
+			</h:column>
+			
+			<!-- Name of Artist -->
+			<h:column>
+				<f:facet name = "header">Artist</f:facet>
+				#{songDe.artist}
+			</h:column>
+			
+			<!--What kind of Genre-->
+			<h:column>
+				<f:facet name = "header">Genre</f:facet>
+				#{songDe.genre}
+			</h:column>
+			
+		</h:dataTable>	
+		
+		<div align="center"> 
+		<h:outputLabel for="buttons">
+					<br/><br/>
+					<h:button outcome="Search" value="Back to Search" />  
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					<h:button outcome="Main" value="Main Page" />   		<!-- Go to add page -->
+								
+		</h:outputLabel>
+		</div>
+		
+		</div>
+		</div>
+		</ui:define>
+		</ui:composition>
+	</h:body>
+
+</html>

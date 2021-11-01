@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+      
+<h:head>
+	<title>Update Song</title>
+</h:head>
+	<h:body>
+		<!-- Sets the layout and Title of the page -->
+		<ui:composition template="/layouts/commonLayout.xhtml">
+		<ui:define name="title">Update Song</ui:define>
+		<ui:define name="content">
+		
+			
+			<!-- The form for login -->
+			<div align="center"><div class ="aligned">
+			<h3>Update a Song in Your MusicCatalog</h3>
+			
+			<h:form>
+				<h4>Type in the song's ID that you want to change!</h4>
+				Song ID:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 					<h:inputText value="#{song.id}" title="" /><h:message for="songid" id = "songid"/><br/><br/> <!-- Song Class inputs to make a song-->
+	
+				<h4>Update all of the songs info here!</h4>
+				Number:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 						<h:inputText value="#{song.num}" title="" /><h:message for="num" id = "num"/><br/> <!-- Song Class inputs to make a song-->
+				Song Name:&nbsp;													<h:inputText value="#{song.name}" title="" /><h:message for="name" id = "name"/><br/>
+				Album:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;				<h:inputText value="#{song.album}" title="" /><h:message for="album" id = "album"/><br/>
+				Artist:  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		<h:inputText value="#{song.artist}" title="" /><h:message for="artist" id = "artist"/><br/>
+				Genre:  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 			<h:inputText value="#{song.genre}" title="" /><h:message for="genre" id = "genre"/><br/>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<h:commandButton action="#{principle.changeProduct(song)}" value="Update Song" />     <!-- Adds song and sends back to Product page-->
+				<h:commandButton action="DisplaySong.xhtml" value="Catalog" />  <!-- Back to user page -->
+			</h:form>
+			</div>
+			<h:messages/> 
+			</div>
+		</ui:define>
+		</ui:composition>
+	
+	</h:body>	
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+
+<h:head>
+	<title>Main Page</title>
+</h:head>
+	
+	<h:body>
+		<ui:composition template="/layouts/commonLayout.xhtml">
+		<ui:define name="title">Main Page</ui:define>
+		<ui:define name="content">
+			
+		<!-- CSS style for the Data Table -->
+		<h:outputStylesheet library="css" name="product-style.css"/>
+		
+			<h:panelGrid columns="1">
+				<h:outputLabel for="name">
+				Hello #{user.userName}. Here is all of your  music!<br/><!-- Forwarded user variables go here-->
+				</h:outputLabel>
+			
+
+			</h:panelGrid>
+			
+			
+			
+		<!--  Data table using the users song list-->
+		<h:dataTable value="#{principle.service.songs}" var="songDe"
+			styleClass="orderTable" 
+    		headerClass="orderTHeader"
+    		rowClasses="orderORow,orderERow"
+    		>
+			
+				
+			<!-- Name of Song -->
+			<h:column>
+				<f:facet name = "header">Song Name</f:facet>
+				#{songDe.name}
+			</h:column>	
+				
+			<!-- Name of Album -->
+			<h:column>
+				<f:facet name = "header">Album</f:facet>
+				#{songDe.album}
+			</h:column>
+			
+			<!-- Name of Artist -->
+			<h:column>
+				<f:facet name = "header">Artist</f:facet>
+				#{songDe.artist}
+			</h:column>
+			
+			<!--What kind of Genre-->
+			<h:column>
+				<f:facet name = "header">Genre</f:facet>
+				#{songDe.genre}
+			</h:column>
+			
+			<!--Action-->
+			<h:column>
+				<f:facet name = "header">Action</f:facet>
+							<h:form> 
+								<h:commandButton action="#{principle.onUpdate(songDe)}" value="Update" /> <!-- Go to update page -->
+								<h:commandButton action="#{principle.onDetailed(songDe)}" value="Details" /> <!-- Go to detail page -->
+								<h:commandButton action="#{principle.onDeleteHelp(songDe)}" value="Delete" /><!-- Go to delete page -->
+							</h:form>
+			</h:column>
+			
+		</h:dataTable>	
+		
+		<h:outputLabel for="buttons">
+					<br/><br/>
+					<h:button outcome="AddSong" value="Add" />   		<!-- Go to add page -->
+					<h:button outcome="Main" value="Back to Main Page" />   		<!-- Go to add page -->
+								
+		</h:outputLabel>
+			
+		</ui:define>
+		</ui:composition>
+	</h:body>
+
+</html>

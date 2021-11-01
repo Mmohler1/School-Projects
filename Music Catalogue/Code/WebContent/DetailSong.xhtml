@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+      
+<h:head>
+	<title>Detail Song</title>
+</h:head>
+	<h:body>
+		<!-- Sets the layout and Title of the page -->
+		<ui:composition template="/layouts/commonLayout.xhtml">
+		<ui:define name="title">Detail Song</ui:define>
+		<ui:define name="content">
+		
+		<!-- CSS style for the Data Table -->
+		<h:outputStylesheet library="css" name="product-style.css"/>
+			
+			<!-- Center Div -->
+			<div align="center">
+			<h3>All the details of the Song!</h3>
+			
+
+			<!--  Data table using the clicked song from the previous page. Will crash if run directly from pag-->
+		<h:dataTable value="#{songs}" var="song"
+			styleClass="orderTable" 
+    		headerClass="orderTHeader"
+    		rowClasses="orderORow,orderERow"
+    		>
+			
+			<!-- Song id -->
+			<h:column>
+				<f:facet name = "header">Song ID</f:facet>
+				#{songs.id}
+			</h:column>
+			
+			
+			<!-- Song Number -->
+			<h:column>
+			
+				<f:facet name = "header">Song Number</f:facet>
+				#{song.num}
+			</h:column>
+				
+			<!-- Name of Song -->
+			<h:column>
+				<f:facet name = "header">Song Name</f:facet>
+				#{song.name}
+			</h:column>	
+				
+			<!-- Name of Album -->
+			<h:column>
+				<f:facet name = "header">Album</f:facet>
+				#{song.album}
+			</h:column>
+			
+			<!-- Name of Artist -->
+			<h:column>
+				<f:facet name = "header">Artist</f:facet>
+				#{song.artist}
+			</h:column>
+			
+			<!--What kind of Genre-->
+			<h:column>
+				<f:facet name = "header">Genre</f:facet>
+				#{song.genre}
+			</h:column>
+			
+		</h:dataTable>
+		<br/><h:button outcome="DisplaySong" value="Catalog" />	  <!-- Back to user page -->
+			</div>
+		</ui:define>
+		</ui:composition>
+	
+	</h:body>	
+</html>

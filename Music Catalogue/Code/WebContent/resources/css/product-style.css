@@ -1,0 +1,46 @@
+@charset "ISO-8859-1";
+
+/*For the product table*/
+.orderTable td {
+ 
+	padding: 1em;
+ 	border: 2px solid black;
+ 	
+}
+
+.orderTable th {
+	padding: 1em;
+
+    
+}
+
+.orderTable{
+	text-align:center;
+	border-collapse: collapse;
+	border: 2px solid black;
+    
+    	  
+}
+
+.orderTHeader{
+	text-align:center;
+	background-color: #171147;
+	font-size: 15px;
+	color: #B3AEE0;
+
+}
+
+
+
+.orderORow{
+	text-align:center;
+	border: 2px solid black;
+	
+}
+
+.orderERow{
+	text-align:center;
+    background-color: #6863A6;
+    
+
+}

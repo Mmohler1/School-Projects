@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+
+<h:head>
+	<title>Registration Page</title>
+</h:head> 
+<body> 
+	
+	<ui:composition template = "/layouts/commonLayout.xhtml">
+		<ui:define name = "tilte">JSF Login Page</ui:define>
+			<ui:define name = "content">
+				<div align = "center">
+					<h:form>
+							First Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<h:inputText id ="firstName" value="#{user.firstName}" /><h:message for= "firstName"/><br/>
+							Last Name:&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<h:inputText id = "lastName" value="#{user.lastName}" /><h:message for= "lastname"/><br/>
+							Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h:inputText id ="email" value="#{user.email}" /><h:message for= "email"/><br/>
+							Address:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<h:inputText id ="address" value="#{user.address}" /><h:message for= "address"/><br/>
+							Phone Number: <h:inputText id ="phone" value="#{user.phoneNumber}" /><h:message for= "for"/><br/>
+							Username: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h:inputText id ="user" value="#{user.userName}" /><h:message for= "user"/><br/>
+							Password:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <h:inputText id ="password" value="#{user.password}" /><h:message for= "password"/><br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h:commandButton action="#{user.saveData}" value="Sign Up"/>
+							<h:button outcome="Login" value="Back to Login page" />	
+					</h:form>
+				<h:messages/>
+				</div>
+			</ui:define>
+	</ui:composition>			
+
+</body> 
+</html>
+

@@ -1,0 +1,50 @@
+@charset "ISO-8859-1";
+
+	body {
+		font-family:Verdana;
+		background: #B3AEE0;
+        color: #171147;
+        
+	}
+
+	.nav {
+        text-align: right;
+        padding-right: 20px;
+        margin-top: 30px;
+        top: 0;
+  		width: 100%;
+        background: #050217;
+        overflow: hidden;
+        
+        
+	
+	}
+	/*Prevents hyperlinks from having lines under the text*/
+	.nav a {
+		text-decoration: none;
+		color: #B3AEE0;
+	}
+	
+	/*Prevents hyperlinks from having lines under the text*/
+	ul {
+		list-style-type: none;
+		display: block;
+       
+        
+	}
+	
+    li {
+		display: inline;
+        padding-right: 5px;
+        color: #B3AEE0;
+
+	
+	}
+
+	.aligned {
+	display: inline-block;
+	text-align:left;
+	
+	}
+
+	

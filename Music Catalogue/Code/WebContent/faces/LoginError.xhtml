@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+
+<h:head></h:head> 
+<body> 
+
+
+		<ui:composition template="/layouts/commonLayout.xhtml">
+		<ui:define name="title">Login Page</ui:define>
+		<ui:define name="content">
+		
+<div align="center"> 
+	<p>Please enter a user name or password that is authorized to access this
+        application. For this application, this means a user that has been
+        created in the <code>file</code> realm and has been assigned to the
+    <em>group</em> of <code>GcuUser</code>.</p>
+    <p><a href="Main.xhtml">Return to Login</a></p>		
+</div>
+
+		</ui:define>
+		</ui:composition>
+		
+</body> 
+</html>

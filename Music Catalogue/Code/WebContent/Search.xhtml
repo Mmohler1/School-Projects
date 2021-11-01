@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+
+<h:head>
+	<title>Search Page</title>
+</h:head>
+	
+	<h:body>
+		<ui:composition template="/layouts/commonLayout.xhtml">
+		<ui:define name="title">Search Page</ui:define>
+		<ui:define name="content">
+			
+			
+		<div align="center"> 
+		<div class = "aligned">
+				
+		<!-- CSS style for the Data Table -->
+		<h:outputStylesheet library="css" name="product-style.css"/>
+		
+		<h3>Search Music by Name!</h3>
+		<div align="center"> 
+		<h:form>
+		Song Name:&nbsp;												<h:inputText value="#{song.name}" title="" /><h:message for="name" id = "name"/><br/><br/>
+		
+					<br/><br/>
+					<h:commandButton action="#{principle.onSearch(song)}" value="Search" />
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					<h:button outcome="Main" value="Back to Main Page" />   		<!-- Go to add page -->						
+
+		</h:form>
+		</div>
+		
+		</div>
+		</div>
+		</ui:define>
+		</ui:composition>
+	</h:body>
+
+</html>
