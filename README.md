@@ -15,7 +15,7 @@ This is a list of my projects that I made while attending Grand Canyon Universit
 <p>Controllers: https://github.com/Mmohler1/School-Projects/tree/main/GroundedStorks/Code/app </p>
 <p>Business and Data Access Layers: https://github.com/Mmohler1/School-Projects/tree/main/GroundedStorks/Code/app/Services </p>
 
-<p>The designs I drewup for Grounded Storks: https://github.com/Mmohler1/School-Projects/tree/main/GroundedStorks/Design </p>
+<p>The designs I drew up for Grounded Storks: https://github.com/Mmohler1/School-Projects/tree/main/GroundedStorks/Design </p>
 
 
 <h3>Minesweeper</h3>
