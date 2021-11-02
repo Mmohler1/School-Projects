@@ -1,7 +1,7 @@
 # Music Catalog
 
 <img src="https://github.com/Mmohler1/School-Projects/blob/main/Music%20Catalogue/Design/MC-1.PNG" alt="Music" width="80%">
-<p>A Music Catalogoing Website for keeping track of one's music.</p>
+<p>A Music Cataloging website for keeping track of one's music.</p>
 
 <p>Important directories are here</p>
 
