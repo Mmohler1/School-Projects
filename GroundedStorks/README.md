@@ -13,5 +13,6 @@
 
 [<p>Business and Data Access Layers</p>]( https://github.com/Mmohler1/School-Projects/tree/main/GroundedStorks/Code/app/Services)
 
+![Image of Grounded Storks](https://github.com/Mmohler1/School-Projects/blob/main/GroundedStorks/Design/Screenshot/GS-2.PNG)
 
 [<p>Designs</p>](https://github.com/Mmohler1/School-Projects/tree/main/GroundedStorks/Design)
