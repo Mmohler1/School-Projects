@@ -1,6 +1,6 @@
 # Music Catalog
 
-![Image of Music Catalog](https://github.com/Mmohler1/School-Projects/blob/main/Music%20Catalogue/Design/MC-1.PNG)
+<img src="https://github.com/Mmohler1/School-Projects/blob/main/Music%20Catalogue/Design/MC-1.PNG" alt="Music" width="80%">
 <p>A Music Catalogoing Website for keeping track of one's music.</p>
 
 <p>Important directories are here</p>
@@ -17,6 +17,5 @@
 
 [<p>Designs</p>]( https://github.com/Mmohler1/School-Projects/tree/main/Music%20Catalogue/Design)
 
-SiteMap:
-
-![Image of Music Catalog Sitemap](https://github.com/Mmohler1/School-Projects/blob/main/Music%20Catalogue/Design/Sitemap.PNG)
+<img src="https://github.com/Mmohler1/School-Projects/blob/main/Music%20Catalogue/Design/Sitemap.PNG" alt="SiteMap" width="60%">
+Sitemap of the website
