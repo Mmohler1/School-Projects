@@ -16,3 +16,6 @@
 [<p>Designs</p>](https://github.com/Mmohler1/School-Projects/tree/main/Minesweeper/Design)
 
 
+<img src="https://github.com/Mmohler1/School-Projects/blob/main/Minesweeper/Design/FlowChart.png" alt="diagram" width="90%">
+
+This diagram shows an extensive view of how the project works.
