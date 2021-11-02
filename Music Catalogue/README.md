@@ -16,3 +16,7 @@
 [<p>Data Access</p>]( https://github.com/Mmohler1/School-Projects/tree/main/Music%20Catalogue/Code/build/classes/data)
 
 [<p>Designs</p>]( https://github.com/Mmohler1/School-Projects/tree/main/Music%20Catalogue/Design)
+
+SiteMap:
+
+![Image of Music Catalog Sitemap](https://github.com/Mmohler1/School-Projects/blob/main/Music%20Catalogue/Design/Sitemap.PNG)
