@@ -21,6 +21,6 @@ https://github.com/Mmohler1/School-Projects/tree/main/Minesweeper
 <h3>Music Catalog</h3>
 
 ![Image of Music Catalog](https://github.com/Mmohler1/School-Projects/blob/main/Music%20Catalogue/Design/MC-1.PNG)
-<p>A Music Catalogoing Website for keeping track of one's music.
+<p>A Music Cataloging website for keeping track of one's music.
 </p>
 https://github.com/Mmohler1/School-Projects/tree/main/Music%20Catalogue
