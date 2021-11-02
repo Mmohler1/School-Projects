@@ -1,6 +1,7 @@
 # GroundedStorks
 
-![Image of Grounded Storks](https://github.com/Mmohler1/School-Projects/blob/main/GroundedStorks/Design/Screenshot/GS-1.PNG)
+<img src="https://github.com/Mmohler1/School-Projects/blob/main/GroundedStorks/Design/Screenshot/GS-1.PNG" alt="diagram" width="70%">
+
 <p>Grounded Storks is a job posting website that lets users login and register to make portfolios, join groups, and apply for jobs.</p>
 
 <p>Most of the code I had written for this project is here</p>
@@ -15,4 +16,6 @@
 
 [<p>Designs</p>](https://github.com/Mmohler1/School-Projects/tree/main/GroundedStorks/Design)
 
-![Image of Grounded Storks](https://github.com/Mmohler1/School-Projects/blob/main/GroundedStorks/Design/Screenshot/GS-2.PNG)
+
+<img src="https://github.com/Mmohler1/School-Projects/blob/main/GroundedStorks/Design/Screenshot/GS-3.PNG" width="60%">
+Here is an example of the search results page with a proper paging system.
