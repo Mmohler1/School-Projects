@@ -17,5 +17,3 @@
 [<p>Designs</p>](https://github.com/Mmohler1/School-Projects/tree/main/GroundedStorks/Design)
 
 
-<img src="https://github.com/Mmohler1/School-Projects/blob/main/GroundedStorks/Design/Screenshot/GS-3.PNG" width="60%">
-Here is an example of the search results page with a proper paging system.
