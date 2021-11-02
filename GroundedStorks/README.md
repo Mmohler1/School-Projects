@@ -9,7 +9,7 @@
 
 [<p>Views</p>](https://github.com/Mmohler1/School-Projects/tree/main/GroundedStorks/Code/resources/views)
 
-[<p>Controllers</p>](https://github.com/Mmohler1/School-Projects/tree/main/GroundedStorks/Code/app)
+[<p>Controllers</p>](https://github.com/Mmohler1/School-Projects/tree/main/GroundedStorks/Code/app/Http/Controllers)
 
 [<p>Business and Data Access Layers</p>]( https://github.com/Mmohler1/School-Projects/tree/main/GroundedStorks/Code/app/Services)
 
